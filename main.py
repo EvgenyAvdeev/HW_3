@@ -98,10 +98,10 @@ def find_paths(digits):
     else:
         print('\nТакого пути не существует')
 
-s = input('Введите значения через пробел, если путь отстутствует введите v: ')
+s = input('Введите значения через запятую: ')
 digits = []
-for i in s.split():
-    if i != 'v':
+for i in s.split(','):
+    if i != '':
         digits.append(int(i))
     else:
         digits.append('')
